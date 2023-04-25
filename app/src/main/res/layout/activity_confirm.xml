@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bimg123"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bimg123"
+        tools:context=".ConfirmActivity">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="338dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="750dp"
+            android:background="@drawable/circle_bt"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/nunitobold"
+            android:lineHeight="16px"
+            android:onClick="button4"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textFontWeight="800"
+            android:textSize="65px"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="227dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="564dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text=""
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="227dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="608dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text=""
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="251dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="476dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text=""
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="227dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="521dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text=""
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view16"
+            android:layout_width="380dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="460dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view17"
+            android:layout_width="380dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="700dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="101dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="564dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="3. Nights -"
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="103dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="608dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="4. Guests -"
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="102dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="652dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="5. Price   -"
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="521dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="2. Date     -"
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="476dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="1. Hotel    -"
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="416dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="Booking Details:"
+            android:textColor="#EC407A"
+            android:textFontWeight="600"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="371dp"
+            android:layout_height="215dp"
+            android:layout_marginTop="133dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/imzz"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pricesign2"
+            android:layout_width="61dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="647dp"
+            android:fontFamily="@font/nunitoregular"
+            android:gravity="left"
+            android:text="Rs  :"
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:textSize="25sp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pricepay1"
+            android:layout_width="157dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="647dp"
+            android:fontFamily="@font/nunitobold"
+            android:gravity="left"
+            android:lineHeight="16px"
+            android:text=""
+            android:textColor="#000000"
+            android:textFontWeight="600"
+            android:textSize="25sp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="273dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="Bookings"
+            android:textAlignment="center"
+            android:textColor="#191D21"
+            android:textFontWeight="800"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

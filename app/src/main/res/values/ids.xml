@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="button1" type="id" />
+    <item name="mobilePhone" type="id" />
+    <item name="country" type="id" />
+    <item name="postCode" type="id" />
+    <item name="address" type="id" />
+    <item name="emailAddress" type="id" />
+    <item name="lastName" type="id" />
+    <item name="firstName" type="id" />
+    <item name="progressbar2" type="id" />
+    <item name="progressbar3" type="id" />
+    <item name="progressbar1" type="id" />
+    <item name="backButton1" type="id" />
+    <item name="reservation" type="id" />
+    <item name="cardNumber" type="id" />
+    <item name="expiry" type="id" />
+    <item name="cvv" type="id" />
+    <item name="name" type="id" />
+    <item name="button2" type="id" />
+</resources>

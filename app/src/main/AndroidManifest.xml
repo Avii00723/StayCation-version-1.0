@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher12"
+        android:label="StayCation"
+        android:roundIcon="@mipmap/ic_launcher12"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Homeh4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Homeh3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Homeh2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Homeh1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".PinfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h15Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h14Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h13Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h12Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h11Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h10Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h9Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h8Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h7Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h5Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h4Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".h1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Pay3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Pay2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Pay1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

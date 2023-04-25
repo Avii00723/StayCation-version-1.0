@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bimg123"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Pay2Activity">
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="35dp"
+
+            android:background="@drawable/back"
+            android:drawableStart="@drawable/back"
+
+
+            android:gravity="center"
+            android:onClick="backButton2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="224dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="Payment"
+            android:textAlignment="center"
+            android:textColor="#191D21"
+            android:textFontWeight="800"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/progressbar1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-100dp"
+
+
+            android:layout_marginTop="130dp"
+            android:background="@drawable/circle_done"
+
+            android:ems="10"
+            android:gravity="center"
+
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/progressbar2"
+
+
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:layout_editor_absoluteX="20dp"
+
+            tools:layout_editor_absoluteY="221dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/progressbar2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+
+
+            android:background="@drawable/circle_done"
+            android:ems="10"
+
+            android:gravity="center"
+
+
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="221dp"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/progressbar3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/circle"
+            android:ems="10"
+            android:gravity="center"
+            android:text="3"
+            android:textSize="50px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/progressbar2"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:layout_editor_absoluteX="20dp"
+
+            tools:layout_editor_absoluteY="221dp" />
+
+        <ImageView
+
+
+            android:id="@+id/card"
+            android:layout_width="350dp"
+            android:layout_height="272dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="439dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/creditcard"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_width="336dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginBottom="351dp"
+            android:background="@drawable/circle_bt"
+            android:backgroundTint="@color/grey"
+            android:ems="10"
+
+            android:fontFamily="@font/nunitoregular"
+
+
+            android:hint="Card Number"
+            android:inputType="textPersonName"
+            android:lineHeight="16px"
+            android:paddingLeft="10dp"
+
+
+            android:textFontWeight="400"
+            android:textSize="45px"
+            app:flow_horizontalAlign="center"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/expiry"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="558dp"
+            android:layout_marginEnd="212dp"
+            android:layout_marginBottom="283dp"
+            android:background="@drawable/circle_bt"
+            android:backgroundTint="@color/grey"
+            android:ems="10"
+            android:fontFamily="@font/nunitoregular"
+            android:hint="Expiry"
+            android:inputType="textPersonName"
+            android:lineHeight="16px"
+            android:paddingLeft="10dp"
+            android:textFontWeight="400"
+            android:textSize="45px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="558dp"
+            android:layout_marginBottom="283dp"
+            android:background="@drawable/circle_bt"
+            android:backgroundTint="@color/grey"
+
+            android:ems="10"
+            android:fontFamily="@font/nunitoregular"
+
+
+            android:hint="CVV"
+            android:inputType="textPersonName"
+            android:lineHeight="16px"
+            android:paddingLeft="10dp"
+
+
+            android:textFontWeight="400"
+
+
+            android:textSize="45px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="336dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="626dp"
+            android:layout_marginBottom="215dp"
+            android:background="@drawable/circle_bt"
+            android:backgroundTint="@color/grey"
+            android:ems="10"
+
+            android:fontFamily="@font/nunitoregular"
+
+
+            android:hint="Your Name as on the Card"
+            android:inputType="textPersonName"
+            android:lineHeight="16px"
+            android:paddingLeft="10dp"
+
+
+            android:textFontWeight="400"
+            android:textSize="45px"
+            app:flow_horizontalAlign="center"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="338dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="748dp"
+
+
+            android:background="@drawable/circle_bt"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/nunitobold"
+
+            android:lineHeight="16px"
+
+
+            android:onClick="button2"
+            android:text="@string/button2"
+            android:textColor="@color/white"
+
+            android:textFontWeight="800"
+
+
+            android:textSize="65px"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+
+
+            app:layout_constraintTop_toBottomOf="parent"
+
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

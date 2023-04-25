@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/thought"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="Find a perfect place to stay"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="800"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thought3"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve"
+        android:backgroundTint="#E3F2FD"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="Suggested Hotels"
+        android:textColor="#D50000"
+        android:textFontWeight="800"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/input_details"
+        android:layout_width="391dp"
+        android:layout_height="259dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="122dp"
+        android:background="@drawable/curve"
+        android:backgroundTint="#282727"
+        android:minHeight="260dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/places"
+            android:layout_width="219dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/curve"
+            android:backgroundTint="#565151"
+            android:fontFamily="@font/nunitobold"
+            android:gravity="center"
+            android:hint="Places"
+            android:padding="11dp"
+            android:textColor="@color/white"
+            android:textColorHint="#C0FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/dates"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/No_of_Guests"
+            android:layout_width="116dp"
+            android:layout_height="56dp"
+            android:background="@drawable/curve"
+            android:backgroundTint="#565151"
+            android:contentDescription="Guests"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textDirection="firstStrong"
+            app:layout_constraintBottom_toTopOf="@+id/nights_to_stay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toEndOf="@+id/places"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355" />
+
+        <EditText
+            android:id="@+id/dates"
+            android:layout_width="219dp"
+            android:layout_height="56dp"
+            android:background="@drawable/curve"
+            android:backgroundTint="#565151"
+            android:fontFamily="@font/nunitobold"
+            android:gravity="center"
+            android:hint="Date"
+            android:textColor="@color/white"
+            android:textColorHint="#EFFFFFFF"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/search_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.782" />
+
+        <Spinner
+            android:id="@+id/nights_to_stay"
+            android:layout_width="116dp"
+            android:layout_height="56dp"
+            android:background="@drawable/curve"
+            android:backgroundTint="#565151"
+            android:contentDescription="Nights"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textDirection="firstStrong"
+            app:layout_constraintBottom_toTopOf="@+id/search_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toEndOf="@+id/dates"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.782" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="345dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/curve"
+            android:backgroundTint="#F1744C"
+            android:fontFamily="@font/nunitoregular"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textFontWeight="800"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hotelsuggestions"
+        android:layout_width="439dp"
+        android:layout_height="257dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_details"
+        app:layout_constraintVertical_bias="0.454">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mariottejaipursuggestion"
+                android:layout_width="203dp"
+                android:layout_height="211dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="208dp"
+                    android:layout_height="211dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/mariottejaipur" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Mariotte Jaipur "
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tajhotelsuggestion"
+                android:layout_width="200dp"
+                android:layout_height="211dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/tajhotelmumbai" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Taj Hotel Mumbai "
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/radissonbluindoresuggestion"
+                android:layout_width="200dp"
+                android:layout_height="211dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/radissonbluindroe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Radisson Blu Indore "
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tajpalacedelhisuggestion"
+                android:layout_width="200dp"
+                android:layout_height="211dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="211dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/tajpalace_newdelhi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Taj New Delhi "
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="824dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/explore_btn"
+            android:layout_width="103dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp"
+            android:onClick="home1"
+            android:src="@drawable/hicon11" />
+
+        <ImageView
+            android:id="@+id/alert_btn"
+            android:layout_width="103dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp"
+            android:onClick="home2"
+            android:src="@drawable/hicon22" />
+
+        <ImageView
+            android:id="@+id/admin_btn"
+            android:layout_width="103dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp"
+            android:onClick="home3"
+            android:src="@drawable/hicon13" />
+
+        <ImageView
+            android:id="@+id/admin_btn2"
+            android:layout_width="103dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp"
+            android:onClick="home4"
+            android:src="@drawable/loginimzz" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="870dp"
+        android:background="@color/white"
+        android:foregroundGravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="51dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Home"
+            android:textColor="#191D21"
+            android:textFontWeight="400"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="76dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="123dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Bookings"
+            android:textColor="#191D21"
+            android:textFontWeight="400"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="52dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="235dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Profile"
+            android:textColor="#191D21"
+            android:textFontWeight="400"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="58dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="338dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Logout"
+            android:textColor="#191D21"
+            android:textFontWeight="400"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

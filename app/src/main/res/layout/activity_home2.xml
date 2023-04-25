@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home2Activity"
+    android:background="@drawable/bimg123"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/suggestedhoteltext"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:fontFamily="@font/nunitoregular"
+        android:gravity="center"
+        android:text="Suggested Hotels\n As per the search"
+        android:textColor="#191D21"
+        android:textFontWeight="800"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:id="@+id/listofhotels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/taj_palace_delhi_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layouttajpalace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/taj_palace_delhi_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/tajpalace_newdelhi" />
+
+                    <TextView
+                        android:id="@+id/taj_palace_delhi_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/nunitoregular"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Taj-Palace" />
+
+                    <TextView
+                        android:id="@+id/taj_palace_delhi_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 5000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/radisson_blu_indore_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutradissonblu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/radisson_blu_indore_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/radissonbluindroe" />
+
+                    <TextView
+                        android:id="@+id/radisson_blu_indore_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Radisson-Blu" />
+
+                    <TextView
+                        android:id="@+id/radisson_blu_indore_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 1000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mariotte_jaipur_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutmariottejaipur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mariotte_jaipur_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/mariottejaipur" />
+
+                    <TextView
+                        android:id="@+id/mariotte_jaipur_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Mariotte" />
+
+                    <TextView
+                        android:id="@+id/mariotte_jaipur_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 5000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tajhotel_mumbai_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layouttajhotelmumbai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tajhotel_mumbai_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/tajhotelmumbai" />
+
+                    <TextView
+                        android:id="@+id/tajhotel_mumbai_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Taj-Hotel" />
+
+                    <TextView
+                        android:id="@+id/tajhotel_mumbai_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 5000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/aloft_newdelhi_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutaloftdelhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/aloft_newdelhi_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/aloftnewdelhiaerocity" />
+
+                    <TextView
+                        android:id="@+id/aloft_newdelhi_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Aloft-Aerocity" />
+
+                    <TextView
+                        android:id="@+id/aloft_newdelhi_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 4000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/essentia_luxuryhotel_indore_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutessentiaindore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/essentia_luxuryhotel_indore_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/essentia_luxuryhotelindore" />
+
+                    <TextView
+                        android:id="@+id/essentia_luxuryhotel_indore_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Essentia-LuxuryHotel" />
+
+                    <TextView
+                        android:id="@+id/essentia_luxuryhotel_indore_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 6000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hyatt_regency_pune_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layouthyattregencypune"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/hyatt_regency_pune_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/hyatt_regency_pune" />
+
+                    <TextView
+                        android:id="@+id/hyatt_regency_pune_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Hyatt-Regency" />
+
+                    <TextView
+                        android:id="@+id/hyatt_regency_pune_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 1000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/marrioteindore_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutmarioteindore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/marrioteindore_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/indoremarriote" />
+
+                    <TextView
+                        android:id="@+id/marrioteindore_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Marriote" />
+
+                    <TextView
+                        android:id="@+id/marrioteindore_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 6000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/novotelaerocity_delhi_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutnovelaerocity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/novotelaerocity_delhi_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/novotel_aerocitydelhihotels" />
+
+                    <TextView
+                        android:id="@+id/novotelaerocity_delhi_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Novotel-Aerocity" />
+
+                    <TextView
+                        android:id="@+id/novotelaerocity_delhi_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 1000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/novotelpune_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutnovotelpune"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/novotelpune_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/novotelpune" />
+
+                    <TextView
+                        android:id="@+id/novotelpune_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Novotel" />
+
+                    <TextView
+                        android:id="@+id/novotelpune_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 1000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/oberoi_mumbai_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutoberoimumbai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/oberoi_mumbai_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/oberoimumbai" />
+
+                    <TextView
+                        android:id="@+id/oberoi_mumbai_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Oberoi" />
+
+                    <TextView
+                        android:id="@+id/oberoi_mumbai_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 2000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/corinthians_pune_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutcorinthianspune"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/corinthians_pune_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/thecorinthians_boutiquepune" />
+
+                    <TextView
+                        android:id="@+id/corinthians_pune_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="The-Corinthians-Boutique" />
+
+                    <TextView
+                        android:id="@+id/corinthians_pune_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 3000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/trident_jaipur_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layouttridentjaipur"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/trident_jaipur_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/trident_jaipur_rajasthan" />
+
+                    <TextView
+                        android:id="@+id/trident_jaipur_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Trident" />
+
+                    <TextView
+                        android:id="@+id/trident_jaipur_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 8000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/umaidbhawan_jaipur_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutumaidbhawan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/umaidbhawan_jaipur_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/umaidbhawanjaipur" />
+
+                    <TextView
+                        android:id="@+id/umaidbhawan_jaipur_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="Umaid-Bhawan" />
+
+                    <TextView
+                        android:id="@+id/umaidbhawan_jaipur_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 1000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/vitshotel_mumbai_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutvitsmumbai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/vitshotel_mumbai_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="221dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/vitshotelmumbai" />
+
+                    <TextView
+                        android:id="@+id/vitshotel_mumbai_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="VITS-Hotel" />
+
+                    <TextView
+                        android:id="@+id/vitshotel_mumbai_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#191D21"
+                        android:textFontWeight="400"
+                        android:textSize="20sp"
+                        android:text="\u20B9 5000/per night" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
